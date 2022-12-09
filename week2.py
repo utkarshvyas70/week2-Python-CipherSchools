@@ -105,3 +105,35 @@ print(add_two(first_name,last_name))
 def add_three(a,b,c):
     return a+b+c
 add_three(5,5,5)
+
+#video 75
+def last_char(name):
+    return name[-1]
+print(last_char("Utkarsh vyas"))
+last_char(9)
+
+def odd_even(num):
+    if num%2==0:
+        return "even"
+    else:
+        return "odd"
+
+#video 76
+class Phone:
+    def __init__(self,brand,model_name,price):
+        self.brand=brand
+        self.model_name=model_name
+        self._price=max(price,0)
+
+    def full_name(self):
+        return f"{self.brand} {self.model_name}"
+
+    def make_a_call(self,number):
+        return f"calling {number}"
+
+class Smartphone(Phone):
+    def __init__(self,brand,model_name, price, ram, internal_memory, rear_camera):
+        super().__init__(brand,model_name,price)
+        self.ram=ram
+        self.internal_memory = internal_memory
+        self.rear_camera=rear_camera
