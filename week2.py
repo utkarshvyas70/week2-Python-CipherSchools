@@ -137,3 +137,35 @@ class Smartphone(Phone):
         self.ram=ram
         self.internal_memory = internal_memory
         self.rear_camera=rear_camera
+#video 77
+def greater(a,b):
+    if a > b:
+        return a
+    else:
+        return b
+num1=int(input("Enter first number "))
+num2=int(input("Enter second number "))
+bigger = greater(num1,num2)
+
+print(f"{bigger} is greater")
+
+#video 78 and video 79
+def greatest(a,b,c):
+    if a>b and a>c:
+        return a
+    elif b>a and b>c:
+        return b
+    else:
+        return c
+print(greatest(100,40,30))
+
+def new_greates(a,b,c):
+    bigger=greater(a,b)
+    return greater(bigger,c)
+print(new_greates(1000,200,30))
+
+# video 81 excercise
+def is_palindrom(word):
+    return word == word[::-1]
+print(is_palindrom("naman"))
+print(is_palindrom("horse"))
