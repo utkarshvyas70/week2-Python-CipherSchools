@@ -169,3 +169,121 @@ def is_palindrom(word):
     return word == word[::-1]
 print(is_palindrom("naman"))
 print(is_palindrom("horse"))
+
+#video 82
+def fibonacci_seq(n):
+    a=0
+    b=1
+    if n==1:
+        print(a)
+    elif n==2:
+        print(a, b)
+    else:
+        print(a,b,end=" ")
+        for i in range(n-2):
+            c= a+b
+            a=b
+            b=c
+            print(b,end=" ")
+fibonacci_seq(20)
+
+#video 83
+def user_info(first_name = 'unknown' , last_name='unknown', age=None):
+    print(f"Your first name is {first_name}")
+    print(f"Your last name is {last_name}")
+    print(f"Your age is {age}")
+user_info()
+
+#video 84
+x=5
+def func():
+    global x
+    x=7
+    return x
+
+print(x)
+print(func())
+print(x)
+
+#video 85
+numbers=[1,2,3,4]
+print(numbers[1])
+
+word=["word1", "word2", "word3"]
+print(word[:2])
+
+mixed=[1,2,3,4,"five","six",2.3,None]
+print(mixed[-1])
+
+mixed[1:]=["three","four"]
+print(mixed)
+
+#video 86
+fruits=[]
+fruits.append("mango")
+fruits.append("grapes")
+print(fruits)
+
+#video 87
+fruits1=['mango','orange']
+fruits2=['grapes','apple']
+fruits=fruits1+fruits2
+fruits1.extend(fruits2)
+fruits1.append(fruits2)
+print(fruits1)
+print(fruits2)
+
+#video 88
+fruits=['orange', 'apple', 'pear','banana','apple','kiwi']
+fruits.remove('apple')
+print(fruits)
+
+#video 89
+fruits=['orange','apple','pear','banana','kiwi']
+if 'mango' in fruits:
+    print("mango is present")
+else:
+    print("not present")
+
+#video 90
+fruits=['orange','apple','pear','banana','kiwi','apple']
+numbers=[3,5,1]
+numbers_copy = numbers.copy()
+print(num)
+
+#video 91
+fruits1=['orange','apple','pear']
+fruits3=['orange','apple','pear']
+fruits2=['banana','kiwi','apple','banana']
+print(fruits1==fruits3)
+print(fruits1 is fruits3)
+
+#video 92
+user_info=['harshit','24']
+print(','.join(user_info))
+
+#video 94
+s='string'
+l=['word1','word2','word3']
+l.append('word3')
+print(l)
+
+#video 95
+fruits=['orange','apple','pear','banana']
+for fruit in fruits:
+    print(fruit)
+
+i=0
+while i < len(fruits):
+    print(fruits[i])
+    i+=1
+
+#video 96
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+for sublist in matrix:
+    for i in sublist:
+        print(i)
+
+s='string'
+print(type(s))
+print(type(matrix))
