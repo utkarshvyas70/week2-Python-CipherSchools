@@ -394,3 +394,70 @@ num_list=str([1,2,3,4,5,6,7,8,9,10])
 print(num_list)
 print(type(num_list))
 
+#video 117
+user_info={
+    'name':'utkarsh',
+    'age':24,
+    'fav_movies':['coco','kimi no na wa'],
+    'fav_tunes':['awakening','fairy tale']
+
+}
+user_info2={}
+user_info2['name']='mohit'
+
+#video 118
+user_info={
+    'name':'utkarsh',
+    'age':24,
+    'fav_movies':['coco','kimi no na wa'],
+    'fav_tunes':['awakening','fairy tale']
+
+}
+4for i,j in user_info.items():
+    print(f"key is {i} and value is{j}")
+
+
+#video 119
+user_info={
+    'name':'utkarsh',
+    'age':24,
+    'fav_movies':['coco','kimi no na wa'],
+    'fav_tunes':['awakening','fairy tale']
+
+}
+popped_item=user_info.pop('fav_tunes')
+print(type(popped_item))
+print(user_info)
+
+#video 120
+user_info={
+    'name':'utkarsh',
+    'age':24,
+    'fav_movies':['coco','kimi no na wa'],
+    'fav_tunes':['awakening','fairy tale']
+
+}
+more_info={'name':'Utkarsh vyas','State':'Rajasthan','hobbies':['coding','swim']}
+user_info.update({})
+print(user_info)
+
+#video 121
+d={'name':'Utkarsh','age':'unkown'}
+print(d['names'])
+print(d.get('names'))
+if 'name' in d:
+    print('present')
+else:
+    print('not present')
+
+if d.get('name'):
+    print('present')
+else:
+    print('not present')
+
+d.clear()
+print(d)
+
+#video 122
+user={'name':'Utkarsh','age':34,'age':24}
+print(user)
