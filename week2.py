@@ -287,3 +287,110 @@ for sublist in matrix:
 s='string'
 print(type(s))
 print(type(matrix))
+
+#video 97
+numbers= [1,2,3,4,5,6,7,8,9,10]
+def negative_list(1):
+    negative=[]
+    for i in l:
+        negative.append()
+
+#video 99
+def square_list(1):
+    square=[]
+    for i in l:
+        square.append(i**2)
+    return square
+
+numbers=list(range(1,11))
+print(square_list(numbers))
+
+#video 101
+def reverse_list(1):
+    r_list=[]
+    for i in range(1,len(1)+1):
+        popped_item=l.pop()
+
+numbers=[1,2,3,4]
+print(reverse_list(numbers))
+
+#video 103
+def reverse_elements(1):
+    elements=[]
+    for i in l:
+        elements.append(i[::-1])
+    return elements
+
+words=['abc','tuv','xyz']
+print(reverse_elements(words))
+
+#video 105
+def filter_odd_even(1):
+    odd_nums=[]
+    even_nums=[]
+    for i in l:
+        if i%2==0:
+            even_nums.append(i)
+        else:
+            odd_nums.append(i)
+    output=[odd_nums,even_nums]
+    return output
+num=[1,2,3,4,5,6,7]
+filter_odd_even(num)
+
+#video 107
+def common_finder(l1,l2):
+    output=[]
+    for i in l1:
+        if i in l2:
+            output.append(i)
+    return output
+
+common_finder([1,2,5,8],[1,2,7,6])
+
+#video 108
+numbers=[6,60,2]
+print(min(numbers))
+print(max(numbers))
+
+def greatest_duff(1):
+    return max(1)-min(1)
+print(greatest_duff(numbers))
+
+#video 110
+def sublist_counter(1):
+    count=0
+    for i in l:
+        if type(i)==list:
+            count+=1
+    return count
+
+mixed=[1,2,3,[1,2]]
+print(sublist_counter(mixed))
+
+#video 112
+ex=('one','two','three')
+ex[0]=1
+print(ex)
+
+#video 113
+fav=('southern magnolia',['tokyo ghoul theme','landscape'])
+fav[1].pop()
+fav[1].append('we made it')
+print()
+
+#video 114
+def func(int1,int2):
+    add=int1+int2
+    multiply=int1*int2
+    return add,multiply
+add,multiply=func(2,3)
+print(add)
+print(multiply)
+
+#video 115
+num=str((1,2,3,4,5,6,7,8,9,10))
+num_list=str([1,2,3,4,5,6,7,8,9,10])
+print(num_list)
+print(type(num_list))
+
